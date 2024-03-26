@@ -1,8 +1,6 @@
-import { getDocuments } from "@/lib/doc";
+import Image from "next/image";
 
 export default function Home() {
-  const allDocuments = getDocuments();
-  console.log(allDocuments);
   return (
     <article class="">
       <div class="relative">
@@ -14,9 +12,9 @@ export default function Home() {
               </h1>
 
               <p class="mt-6 text-base leading-7 text-slate-700">
-                It doesn't matter if you have an API if nobody knows how to use
-                it. Teach people the ins and outs of OAuth 2.0 and JWTs in style
-                with Protocol, a beautiful API documentation template.
+                It doesn&#39;t matter if you have an API if nobody knows how to
+                use it. Teach people the ins and outs of OAuth 2.0 and JWTs in
+                style with Protocol, a beautiful API documentation template.
               </p>
 
               <div class="mt-10 flex flex-wrap gap-4">
@@ -30,10 +28,11 @@ export default function Home() {
               </div>
             </div>
             <div class="relative lg:col-span-3">
-              <img
+              <Image
                 src="/banner.png"
                 width="1600"
                 height="1280"
+                alt="banner"
                 class="relative z-20 -mb-36 aspect-[853/682] max-w-[630px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16"
               />
             </div>
